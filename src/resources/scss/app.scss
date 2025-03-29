@@ -5,3 +5,10 @@ h1 {
 h2 {
   color: blue;
 }
+.user-avatar {
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}

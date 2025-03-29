@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
+const methodOverride = require('method-override');
 const route = require('./routes');
 const db = require('./config/db');
 
@@ -20,12 +21,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // HTTP logger
 app.use(morgan('combined'));
-
+ 
+// Method override
+app.use(methodOverride('_method'));
 // Cấu hình Template engine
 app.engine(
   'hbs',
   exphbs.engine({
     extname: '.hbs',
+    helpers: {
+      sum: (a, b) => a + b,
+    },
   }),
 ); 
 app.set('view engine', 'hbs');

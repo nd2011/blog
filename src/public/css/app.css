@@ -5,5 +5,14 @@ h1 {
 h2 {
   color: blue;
 }
-
+.user-avatar {
+  width: 40px; /* Giới hạn chiều rộng */
+  height: 40px; /* Giới hạn chiều cao */
+  border-radius: 50%; /* Làm tròn */
+  margin-right: 4px;
+}
 /*# sourceMappingURL=app.css.map */
+
+.delete-button {
+  
+}
