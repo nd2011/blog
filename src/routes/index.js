@@ -8,9 +8,11 @@ function route(app) {
 
 
   app.use('/news', newsRouter);
+  // Route courses
   app.use('/courses', coursesRouter);
+  // Route me
   app.use('/me', meRouter);
-
+  // Route site
   app.use('/', siteRouter);
 }
 

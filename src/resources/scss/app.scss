@@ -6,9 +6,8 @@ h2 {
   color: blue;
 }
 .user-avatar {
-  width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid white;
+  width: 40px; /* Giới hạn chiều rộng */
+  height: 40px; /* Giới hạn chiều cao */
+  border-radius: 50%; /* Làm tròn */
+  margin-right: 4px;
 }
